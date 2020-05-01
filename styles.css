@@ -1,0 +1,376 @@
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Alice', serif;
+*/
+
+/*
+Blue-gray: #919dcc
+*/
+
+/*----------------------------------------------*/
+/* BASIC SETUP */
+/*----------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #080A0F;
+    color: #fff;
+    font-family: Playfair, Alice;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom:1;}
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*----------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*----------------------------------------------*/
+
+.row {
+    max-width: 2048px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/*-----------------HEADINGS-----------------*/
+h2,
+h3 {
+    font-weight: 300;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 1px;
+}
+
+/* ----- PARAGRAPHS ----- */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/* ----- ICONS ----- */
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: ;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: ;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ----- LINKS ----- */
+
+a:link,
+a:visited {
+    color: #919dcc;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #919dcc;
+    border-bottom: 1px solid transparent;
+}
+
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+header {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+}
+
+.top-nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.top-nav li a:link,
+.top-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    font-size: 98%;
+    padding: 6px;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.top-nav li a:hover,
+.top-nav li a:active {
+    border-bottom: 2px solid #919dcc
+}
+
+/* ----------------------------------------------- */
+/* NAVBAR */
+/* ----------------------------------------------- */
+.sticky {
+    background-color: #080A0F;
+}
+
+/* Main nav */
+.main-nav {
+    float: right;
+    text-align: right;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    padding: 3px 0;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #919dcc;
+}
+
+/* Mobile nav */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/* Sticky nav */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #080A0F;
+    box-shadow: 0 2px 2px #69718F;
+    z-index: 9999;
+}
+
+.sticky .main-nav { 
+    display: none;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #fff;
+}
+
+.sticky .logo { display: none; }
+.sticky .sticky-logo { 
+    display: none;
+    height: 50px;
+    width: auto;
+    float:right;
+    margin-right: 50px;
+}
+
+/* ----------------------------------------------- */
+/* SLIDESHOW */
+/* ----------------------------------------------- */
+.slideshow {
+    position: relative;
+    max-width: 1150px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.slides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #919dcc;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #fff
+}
+
+.slides-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/* ----------------------------------------------- */
+/* LATEST UPDATES */
+/* ----------------------------------------------- */
+.updates {
+    text-align: center;
+    margin-top: -3%;
+}
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+footer {
+    font-size: 80%;
+    padding-bottom: 2%;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    color: #8b8b8b;
+    border: 0;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 180%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram {
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.ion-social-facebook:hover {
+    color: #4a75d3;
+}
+
+.ion-social-twitter:hover {
+    color: #1da1f2;
+}
+
+.ion-social-instagram:hover {
+    color: #c545eb;
+}
+
+footer p {
+    text-align: center;
+    font-size: 90%;
+}
