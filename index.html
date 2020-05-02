@@ -44,7 +44,34 @@
         </div>
     </nav>
 
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+    function myFunctionn() {
+    var x = document.getElementById("Mynavbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+    </script>
+
     <div class="slideshow">
+    <div class="slideshow-inner">
         <!--Images-->
             <div class="slides">
                 <img src="img/Slideshow/DSC_0042.jpg" style="width:100%">
@@ -65,46 +92,32 @@
                 <img src="img/Slideshow/TM1_7720.jpg" style="width:100%">
             </div>
             <!--Next and previous buttons-->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
         <!--Thumbnails-->
         <div class="slides-row">
             <div class="column">
-                <img class="demo cursor" src="img/Slideshow/DSC_0042.jpg" style="width:100%" onclick="currentSlide(1)">
+                <img class="dot" src="img/Slideshow/DSC_0042.jpg" style="width:100%" onclick="currentSlide(1)">
             </div>
             <div class="column">
-                <img class="demo cursor" src="img/Slideshow/DSC_0170.jpg" style="width:100%" onclick="currentSlide(2)">
+                <img class="dot" src="img/Slideshow/DSC_0170.jpg" style="width:100%" onclick="currentSlide(2)">
             </div>
             <div class="column">
-                <img class="demo cursor" src="img/Slideshow/DSC_0252.jpg" style="width:100%" onclick="currentSlide(3)">
+                <img class="dot" src="img/Slideshow/DSC_0252.jpg" style="width:100%" onclick="currentSlide(3)">
             </div>
             <div class="column">
-                <img class="demo cursor" src="img/Slideshow/DSC_1201.jpg" style="width:100%" onclick="currentSlide(4)">
+                <img class="dot" src="img/Slideshow/DSC_1201.jpg" style="width:100%" onclick="currentSlide(4)">
             </div>
             <div class="column">
-                <img class="demo cursor" src="img/Slideshow/DSC_1720.jpg" style="width:100%" onclick="currentSlide(5)">
+                <img class="dot" src="img/Slideshow/DSC_1720.jpg" style="width:100%" onclick="currentSlide(5)">
             </div>
             <div class="column">
-                <img class="demo cursor" src="img/Slideshow/TM1_7720.jpg" style="width:100%" onclick="currentSlide(6)">
+                <img class="dot" src="img/Slideshow/TM1_7720.jpg" style="width:100%" onclick="currentSlide(6)">
             </div>
         </div>
-        <script>
-            // Slideshow
-            var slideIndex = 1;
-            carousel();
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("slides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > x.length) {slideIndex = 1}
-                x[slideIndex-1].style.display = "block";
-                setTimeout(carousel, 3000); // Change image every 2 seconds
-            }
-        </script>
+    </div>
     </div>
 
     <section>
@@ -131,6 +144,7 @@
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
     <script src="Resources/js/script.js"></script>
+    <script src="Resources/js/script.js"></script>
     
-</body>
+    </body>
 </html>
