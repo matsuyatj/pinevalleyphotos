@@ -12,7 +12,7 @@
 /* Small to big tablets: 768-1023px */
 @media only screen and (max-width: 1023px) {
 body { font-size: 18px; }
-section { padding: 60px 0; }
+section { padding: 30px 0; }
 
 
 .icon-small {
@@ -67,7 +67,3 @@ h3 { font-size: 90%; }
 }
 
 .social-links li { margin-top: 25%; }
-
-}
-
-
