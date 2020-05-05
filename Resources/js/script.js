@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     // Slideshow
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -34,8 +33,8 @@ $(document).ready(function() {
 
     function showSlides(n){
         var i;
-        var slides = document.getElementsByClassName("slides");
-        var dots = document.getElementsByClassName("dot");
+        var slides = document.getElementsByClassName("imageslides");
+        var dots = document.getElementsByClassName("thumbs");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
