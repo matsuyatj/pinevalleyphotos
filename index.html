@@ -32,7 +32,7 @@
     </header>
 
     <nav>
-        <div class="row js--row">
+        <div class="stickyrow js--row">
             <img src="Resources/img/Logo/PVP logo small.png" alt="PVP logo" class="logo">
             <img src="Resources/img/logo/PVP logo white small.png" alt="sticky logo" class="sticky-logo">
             <ul class="main-nav">
@@ -45,56 +45,56 @@
     </nav>
 
 
-    <div class="slideshow js--slideshow">
+    <section class="slideshowcontainer js--slideshow">
     <div class="slideshow-inner">
         <!--Images-->
-            <div class="slides">
-                <img src="Resources/img/Slideshow/DSC_0042.jpg" style="width:100%">
-            </div>
-            <div class="slides">
-                <img src="Resources/img/Slideshow/DSC_0170.jpg" style="width:100%">
-            </div>
-            <div class="slides">
-                <img src="Resources/img/Slideshow/DSC_0252.jpg" style="width:100%">
-            </div>
-            <div class="slides">
-                <img src="Resources/img/Slideshow/DSC_1201.jpg" style="width:100%">
-            </div>
-            <div class="slides">
-                <img src="Resources/img/Slideshow/DSC_1720.jpg" style="width:100%">
-            </div>
-            <div class="slides">
-                <img src="Resources/img/Slideshow/TM1_7720.jpg" style="width:100%">
-            </div>
-            <!--Next and previous buttons-->
+        <div class="imageslides fade">
+            <img src="Resources/img/Slideshow/DSC_0042.jpg" width="100%">
+        </div>
+        <div class="imageslides fade">
+            <img src="Resources/img/Slideshow/DSC_0170.jpg" width="100%">
+        </div>
+        <div class="imageslides fade">
+            <img src="Resources/img/Slideshow/DSC_0252.jpg" width="100%">
+        </div>
+        <div class="imageslides fade">
+            <img src="Resources/img/Slideshow/DSC_1201.jpg" width="100%">
+        </div>
+        <div class="imageslides fade">
+            <img src="Resources/img/Slideshow/DSC_1720.jpg" width="100%">
+        </div>
+        <div class="imageslides fade">
+            <img src="Resources/img/Slideshow/TM1_7720.jpg" width="100%">
+        </div>
         
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
+        <!--Next and previous buttons-->
+        <span id="prev" class="slideshowarrow">&#10094;</span>
+        <span id="next" class="slideshowarrow">&#10095;</span>
+
         <!--Thumbnails-->
-        <div class="slides-row">
+        <div class="slideshowthumbs">
             <div class="column">
-                <img class="dot" src="Resources/img/Slideshow/DSC_0042.jpg" style="width:100%" onclick="currentSlide(1)">
+                <img class="thumbs dot" src="Resources/img/Slideshow/DSC_0042.jpg">
             </div>
             <div class="column">
-                <img class="dot" src="Resources/img/Slideshow/DSC_0170.jpg" style="width:100%" onclick="currentSlide(2)">
+                <img class="thumbs" src="Resources/img/Slideshow/DSC_0170.jpg">
             </div>
             <div class="column">
-                <img class="dot" src="Resources/img/Slideshow/DSC_0252.jpg" style="width:100%" onclick="currentSlide(3)">
+                <img class="thumbs" src="Resources/img/Slideshow/DSC_0252.jpg">
             </div>
             <div class="column">
-                <img class="dot" src="Resources/img/Slideshow/DSC_1201.jpg" style="width:100%" onclick="currentSlide(4)">
+                <img class="thumbs" src="Resources/img/Slideshow/DSC_1201.jpg">
             </div>
             <div class="column">
-                <img class="dot" src="Resources/img/Slideshow/DSC_1720.jpg" style="width:100%" onclick="currentSlide(5)">
+                <img class="thumbs" src="Resources/img/Slideshow/DSC_1720.jpg">
             </div>
             <div class="column">
-                <img class="dot" src="Resources/img/Slideshow/TM1_7720.jpg" style="width:100%" onclick="currentSlide(6)">
+                <img class="thumbs" src="Resources/img/Slideshow/TM1_7720.jpg">
             </div>
         </div>
     </div>
-    </div>
-
+    </section>
+    
     <section>
         <div class="updates">
             <h2>Latest Updates</h2>
