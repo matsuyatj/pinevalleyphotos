@@ -49,10 +49,6 @@ html, body {
     padding: 30px 0;
 }
 
-.box {
-    padding: 1%;
-}
-
 /*-----------------HEADINGS-----------------*/
 h2,
 h3 {
@@ -151,7 +147,7 @@ header {
     display: none;
     float: right;
     text-align: right;
-    padding: 14px;
+    padding: 0 14px;
     text-decoration: none;
 }
 
@@ -199,7 +195,6 @@ header {
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
-    padding: 15px 0;
     color: #fff;
 }
 
@@ -216,9 +211,8 @@ header {
 /* SLIDESHOW */
 /* ----------------------------------------------- */
 .slideshowcontainer {
-    display: ;
     position: relative;
-    max-width: 1100px;
+    max-width: 1060px;
     width: 100%;
     margin: auto;
     padding-top: 6%;
@@ -232,11 +226,12 @@ header {
 .visible {
     opacity: 1;
 }
-
-.slideshowarrow {
+/*
+.next,
+.prev {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -249,20 +244,21 @@ header {
     -webkit-user-select: none;
 }
 
-.slideshowarrow:hover {
+.next:hover,
+.prev:hover {
     background-color: #7087d4c0
 }
 
-#next {
+.next {
     right: 0;
-    border-radius: 3px 0 0 3px
+    border-radius: 3px 0 0 3px;
 }
 
-#prev {
+.prev {
     left: 0;
-    border-radius: 3px 0 0 3px
+    border-radius: 3px 0 0 3px;
 } 
-
+*/
 .slideshowthumbs:after {
     position: absolute;
     display: table;
@@ -275,7 +271,6 @@ header {
 }
 
 .thumbs {
-    cursor: pointer;
     display: inline-block;
     opacity: 0.6;
     border-radius: 5%;
@@ -304,6 +299,7 @@ header {
     from {opacity: .4}
     to {opacity: 1}
 }
+
 
 
 /* ----------------------------------------------- */
