@@ -1,11 +1,40 @@
 /* Big tablets to 1200px (widths smaller than 1140px row) */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
+    h2 {
+        text-align: center;
+        padding-right: 30%;
+        font-weight: 300;
+        font-size: 150%;
+    }
+
     .slideshow {
     width: 100%;
     padding: 0 2%;
 }
 
 .row { padding: 0 2%; }
+
+footer {
+    margin-top: 50%;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+
+    h2 {
+        float: left;
+    }
+
+    .slideshow {
+    width: 100%;
+    padding: 0 2%;
+}
+
+.row { padding: 0 2%; }
+
+footer {
+    margin-top: 85%;
+}
 }
 
 
@@ -14,11 +43,19 @@
 body { font-size: 18px; }
 section { padding: 30px 0; }
 
-
-.icon-small {
-    width: 17px;
-    margin-right: 5px;
+footer {
+    margin-top: 70%;
 }
+}
+
+@media only screen and (max-width: 800px) {
+    body { font-size: 18px; }
+    section { padding: 30px 0; }
+    
+    footer {
+        margin-top: 95%;
+    }
+    }
 
 /* Small phones to small tablets: 481-767px */
 @media only screen and (max-width: 767px) {
