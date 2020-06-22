@@ -1,106 +1,160 @@
 /* Big tablets to 1200px (widths smaller than 1140px row) */
 @media only screen and (max-width: 1500px) {
     h2 {
+        margin-top: 5%;
         text-align: center;
-        padding-right: 30%;
+        padding: 0 25%;
         font-weight: 300;
         font-size: 150%;
     }
 
-    .slideshow {
-    width: 100%;
-    padding: 0 2%;
-}
+        .slideshow {
+        width: 100%;
+        padding: 0 2%;
+    }
 
-.row { padding: 0 2%; }
-
-footer {
-    margin-top: 50%;
-}
+    footer {
+        margin-top: 5%;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
-
-    h2 {
-        float: left;
+    .slideshow {
+        width: 100%;
+        padding: 0 2%;
     }
 
-    .slideshow {
-    width: 100%;
-    padding: 0 2%;
-}
-
-.row { padding: 0 2%; }
-
-footer {
-    margin-top: 85%;
-}
+    footer {
+        margin-top: 5%;
+    }
 }
 
 
 /* Small to big tablets: 768-1023px */
 @media only screen and (max-width: 1023px) {
-body { font-size: 18px; }
-section { padding: 30px 0; }
+    .slideshow {
+        width: 100%;
+        padding: 0 2%;
+    }
 
-footer {
-    margin-top: 70%;
-}
+    section {
+        padding: 0 1%;
+    }
+
+    footer {
+    margin-top: 5%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-    body { font-size: 18px; }
-    section { padding: 30px 0; }
+    .slideshow {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    body { font-size: 80%; }
+
+    section {
+        padding: 0 1%;
+    }
     
     footer {
-        margin-top: 95%;
+        margin-top: 5%;
     }
-    }
+}
 
 /* Small phones to small tablets: 481-767px */
-@media only screen and (max-width: 767px) {
-body { font-size: 15px; }
-section { padding: 30px 0; }
-
-.row,
-.slideshow { padding: 0 4%; }    
-.col {
-    width: 100%;
-    margin: 0 0 4% 0;
+@media only screen and (max-width: 768px) {
+.top-nav {
+    display: inline-block;
+    font-size: 120%;
+    text-align: center;
+    margin-left: 25px;
 }
 
-.main-nav { display: none; }
-
-h1 { font-size: 190%; }
-h2 { font-size: 150%; }
-h3 { font-size: 100%; }
-
-footer .span-1-of-2 {
-    width: 49.2%;
+.top-nav li a:link,
+.top-nav li a:visited{
+    display: inline-block;
+    border: 0;
+    padding: 5px 0;
 }
 
-.footer-nav li {
+.main-nav {
+    float: left;
+    padding-left: 25%;
+}
+
+.main-nav li {
+    display: none;
     display: block;
-    margin-bottom: 5px;
 }
 
-.social-links li { margin-top: 35%; }
-
+.main-nav li a:link,
+.main-nav li a:visited {
+    display: block;
+    border: 0;
 }
+
+.sticky .main-nav { 
+    display: none;
+    text-align: left;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    display: block;
+    padding: 5px 0;
+}
+
+.sticky .mobile-nav-icon {
+    display: inline-block;
+    margin-top: 1%;
+    padding-right: 7%;
+}
+
+.sticky .sticky-logo { 
+    height: 40px;
+    margin-top: 1%;
+}
+
+footer {
+    margin-top: 5%;
+}
+
 
 /* Small phones: 0-480px */
 @media only screen and (max-width: 480px) {
-section { padding: 25px 0;}
-.contact-form { width: 100%; }
-
-h1 { font-size: 170%; }
-h2 { font-size: 130%; }
-h3 { font-size: 90%; }
-
-.icon-small {
-    width: 17px;
-    margin-left: 30%;
-    margin-right: 5px;
+header { 
+    margin-top: 8px;
+    font-size: 90%; 
 }
 
-.social-links li { margin-top: 25%; }
+.top-nav {
+    display: inline-block;
+    font-size: 85%;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.top-nav li a:link,
+.top-nav li a:visited{
+    display: inline-block;
+    border: 0;
+    padding: 2px 0;
+}
+
+.main-nav {
+    float: left;
+    padding-left: 10%;
+}
+
+.sticky .mobile-nav-icon {
+    display: inline-block;
+    margin-top: 1%;
+    padding-right: 7%;
+}
+
+footer {
+    margin-top: 5%;
+}
+}}
