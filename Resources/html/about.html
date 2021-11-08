@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../ionicons-2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/about.css">
-    <link rel="stylesheet" type="text/css" href="../css/queries.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="Resources/ionicons-2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/about.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
     <title>Pine Valley Photography - About</title>
-    <link rel="icon" href="../img/Logo/PVP favicon.png" type="image" sizes="16x16">
+    <link rel="icon" href="Resources/img/Logo/PVP favicon.png" type="image" sizes="16x16">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -22,11 +22,11 @@
     <header>
         <div class="nav-row">
             <div class="home-link">
-                <li><a href="../../index.html">Pine Valley Photography</a></li>
+                <li><a href="index.html">Pine Valley Photography</a></li>
             </div>
                 <ul class="top-nav">
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="http://pinevalleyphotos.com/blog/">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -38,32 +38,31 @@
 
     <nav>
         <div class="stickyrow">
-            <img src="../img/Logo/PVP logo white small.png" alt="sticky logo" class="sticky-logo">
-            <ul class="main-nav">
+            <a href="index.html"><img src="Resources/img/Logo/PVP logo white small.png" alt="sticky logo" class="sticky-logo"></a>
+            <ul class="main-nav js--main-nav">
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="http://pinevalleyphotos.com/blog/">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
         </div>
     </nav>
 
     <section class="aboutme">
-    <div class="about-row">
-        <div class="about span-1-of-2 steps-box">
-            <p>I'm an amateur photographer based in south Louisiana, specifically the Baton Rouge area, though I go wherever the photos take me. I'm an IT professional by trade, which keeps me pretty busy, but I take time for my photography whenever I can. My passion for photography started in middle school, where I was fortunate enough to be able to take a short photography class. From that moment, I was hooked. Ever since, I've tried to develop my skills; trying to find the right frame for a setting, or <i>just</i> the right angle continues to fascinate me to this day as much as it did when I was a kid. I've had experience photographing weddings, graduations, newborns, and more.</p><br>
+        <div class="about-row js--about-row">
+        <div class="headshot">
+            <img src="Resources/img/Headshot/6K8A18890.jpg" class="headshot">
+        </div>
+        <div class="about">
+            <p>I'm an amateur photographer based in south Louisiana, specifically the Baton Rouge area, though I go wherever the photos take me. I'm an IT professional by trade, which keeps me pretty busy, but I take time for my photography whenever I can. My passion for photography started in middle school, where I was fortunate enough to be able to take a short photography class. From that moment, I was hooked. Ever since, I've tried to develop my skills; trying to find the right frame for a setting, or <i>just</i> the right angle continues to fascinate me to this day as much as it did when I was a kid. I've been fortunate enough to have had experience photographing weddings, graduations, newborns, and more.</p><br>
             <p>I love traveling to new places and taking in the sights, local cuisine, and culture, and capturing as much of it on film as I can. If you're interested in my photos, or would like me to do a photoshoot for you, don't hesitate to reach out! I'm always up for a new challenge, and look forward to helping you capture memories that'll last for a lifetime.</p><br>
         </div>
-        <div class="headshot span-1-of-2 steps-box">
-            <img src="../img/Headshot/6K8A18890.jpg" class="headshot">
-        </div>
     </div>
-    </section>
-    
     
     <footer>
         <ul class="social-links">
             <li><a href="https://www.facebook.com/pinevalleyphotos"><i class="ion-social-facebook"></i></a></li>
-            <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+            <li><a href="https://www.instagram.com/pinevalleyphotography/"><i class="ion-social-instagram"></i></a></li>
         </ul>
         <div class="Copyright">
             <p>
@@ -71,12 +70,14 @@
             </p>
         </div>
     </footer>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
-
+    <script src="Resources/js/jquery.waypoints.min.js"></script>
+    <script src="Resources/js/about.js"></script>
     
     </body>
 </html>
